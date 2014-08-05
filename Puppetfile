@@ -33,3 +33,6 @@ mod 'property_list_key',
 
 mod 'managedmac',
     :git => 'https://github.com/dayglojesus/managedmac'
+	
+mod 'outset',
+    :git => 'https://github.com/clburlison/puppet-outset'	
