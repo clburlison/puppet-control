@@ -35,4 +35,7 @@ mod 'managedmac',
     :git => 'https://github.com/dayglojesus/managedmac'
 	
 mod 'outset',
-    :git => 'https://github.com/clburlison/puppet-outset'	
+    :git => 'https://github.com/clburlison/puppet-outset'
+    
+mod 'mobileconfig_profile',
+    :git => 'https://github.com/edestecd/puppet-mobileconfig_profile'    
