@@ -14,4 +14,5 @@ node default {
     }
 
     include clburlisonconfig
+    hiera_include('classes')
 }
