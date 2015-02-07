@@ -38,6 +38,6 @@ mod 'mobileconfig_profile',
     :git => 'https://github.com/edestecd/puppet-mobileconfig_profile'
     
 mod "managedmac",
-  :git => "git://github.com/dayglojesus/managedmac.git",
+  :git => 'git://github.com/dayglojesus/managedmac.git'
   
 mod 'rcoleman/mac_profiles_handler', '0.3.0'  
