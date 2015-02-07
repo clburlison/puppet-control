@@ -13,6 +13,6 @@ node default {
         backup => false,
     }
 
-    include clburlisonconfig
+    include profile
     hiera_include('classes')
 }

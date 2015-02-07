@@ -1,5 +1,5 @@
-mod 'clburlisonconfig',
-    :git => 'https://github.com/clburlison/personal-clburlisonconfig'
+mod 'profile',
+    :git => 'https://github.com/clburlison/personal-puppet-profile'
 
 mod 'mac_admin',
     :git => 'https://github.com/grahamgilbert/puppet-mac_admin'
@@ -30,9 +30,6 @@ mod 'inifile',
 
 mod 'property_list_key',
     :git => 'https://github.com/glarizza/puppet-property_list_key'
-
-mod 'managedmac',
-    :git => 'https://github.com/dayglojesus/managedmac'
 	
 mod 'outset',
     :git => 'https://github.com/clburlison/puppet-outset'
@@ -42,6 +39,5 @@ mod 'mobileconfig_profile',
     
 mod "managedmac",
   :git => "git://github.com/dayglojesus/managedmac.git",
-  :ref => "0.5.9"    
   
 mod 'rcoleman/mac_profiles_handler', '0.3.0'  
