@@ -1,5 +1,5 @@
 mod 'profile',
-    :git => 'https://github.com/clburlison/personal-puppet-profile'
+    :git => 'https://github.com/clburlison/puppet-profile'
 
 mod 'mac_admin',
     :git => 'https://github.com/grahamgilbert/puppet-mac_admin'
