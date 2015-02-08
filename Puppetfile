@@ -40,4 +40,7 @@ mod 'mobileconfig_profile',
 mod "managedmac",
   :git => 'git://github.com/dayglojesus/managedmac.git'
   
+mod "wan_ip",
+  :git => "git://github.com/grahamgilbert/puppet-wan_ip.git"
+  
 mod 'rcoleman/mac_profiles_handler', '0.3.0'  
