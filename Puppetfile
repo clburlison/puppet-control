@@ -33,6 +33,9 @@ mod 'property_list_key',
 	
 mod 'outset',
     :git => 'https://github.com/clburlison/puppet-outset'
+
+mod 'desktoppicture',
+    :git => 'https://github.com/clburlison/puppet-desktoppicture'    
     
 mod 'mobileconfig_profile',
     :git => 'https://github.com/edestecd/puppet-mobileconfig_profile'

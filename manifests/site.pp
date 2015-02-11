@@ -13,6 +13,5 @@ node default {
         backup => false,
     }
 
-    include profile
     hiera_include('classes')
 }
