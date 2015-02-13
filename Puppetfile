@@ -40,6 +40,5 @@ mod 'desktoppicture',
 mod 'mobileconfig_profile',
     :git => 'https://github.com/edestecd/puppet-mobileconfig_profile'
     
-mod 'managedmac',
-  :git => 'git://github.com/dayglojesus/managedmac.git',
-  :ref => 'decb371a9e87b9e06a922e7de78ef1d2eefe6866'
+mod "managedmac",
+  :git => 'git://github.com/dayglojesus/managedmac.git'
