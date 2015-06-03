@@ -23,6 +23,9 @@ mod 'osx',
 #     :git => 'https://github.com/boxen/puppet-boxen',
 #     :ref => '3.11.0'
 
+mod 'git',
+    :git => 'https://github.com/boxen/puppet-git'
+
 mod 'inifile',
     :git => 'https://github.com/puppetlabs/puppetlabs-inifile'
 
