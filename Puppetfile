@@ -19,12 +19,6 @@ mod 'stdlib',
 mod 'osx',
     :git => 'https://github.com/boxen/puppet-osx'
 
-mod 'vagrant',
-    :git => 'https://github.com/boxen/puppet-vagrant'
-
-mod 'git',
-    :git => 'https://github.com/boxen/puppet-git'
-
 mod 'inifile',
     :git => 'https://github.com/puppetlabs/puppetlabs-inifile'
 
