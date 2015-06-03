@@ -35,11 +35,11 @@ mod 'outset',
     :git => 'https://github.com/clburlison/puppet-outset'
 
 mod 'desktoppicture',
-    :git => 'https://github.com/clburlison/puppet-desktoppicture'    
-    
+    :git => 'https://github.com/clburlison/puppet-desktoppicture'
+
 mod 'mobileconfig_profile',
     :git => 'https://github.com/edestecd/puppet-mobileconfig_profile'
     
 mod "managedmac",
-    :git => 'git://github.com/dayglojesus/managedmac.git'
+    :git => 'https://github.com/dayglojesus/managedmac',
     :ref => 'v0.6.0'
