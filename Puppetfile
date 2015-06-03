@@ -19,9 +19,9 @@ mod 'stdlib',
 mod 'osx',
     :git => 'https://github.com/boxen/puppet-osx'
 
-mod 'boxen',
-    :git => 'https://github.com/boxen/puppet-boxen',
-    :ref => '3.11.0'
+# mod 'boxen',
+#     :git => 'https://github.com/boxen/puppet-boxen',
+#     :ref => '3.11.0'
 
 mod 'inifile',
     :git => 'https://github.com/puppetlabs/puppetlabs-inifile'
