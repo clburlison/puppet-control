@@ -29,14 +29,14 @@ mod 'osx',
 
 mod 'homebrew',
     :git => 'https://github.com/boxen/puppet-homebrew.git',
-    :reg => '1.12.1'
+    :ref => '1.12.1'
 
 mod 'inifile',
     :git => 'https://github.com/puppetlabs/puppetlabs-inifile'
 
 mod 'property_list_key',
     :git => 'https://github.com/glarizza/puppet-property_list_key'
-	
+
 mod 'outset',
     :git => 'https://github.com/clburlison/puppet-outset'
 
