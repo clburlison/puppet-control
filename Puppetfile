@@ -19,7 +19,7 @@ mod 'stdlib',
 mod 'osx',
     :git => 'https://github.com/boxen/puppet-osx'
 
-mod 'osx',
+mod 'boxen',
     :git => 'https://github.com/boxen/puppet-boxen',
     :ref => '3.11.0'
 
