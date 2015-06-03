@@ -23,12 +23,11 @@ mod 'osx',
 #     :git => 'https://github.com/boxen/puppet-boxen',
 #     :ref => '3.11.0'
 
-# mod 'boxen',
-#     :git => 'https://github.com/boxen/puppet-boxen',
-#     :ref => '3.11.0'
+mod 'git',
+    :git => 'https://github.com/boxen/puppet-git'
 
 mod 'homebrew',
-    :git => 'https://github.com/boxen/puppet-homebrew.git',
+    :git => 'https://github.com/boxen/puppet-homebrew',
     :ref => '1.12.1'
 
 mod 'inifile',
