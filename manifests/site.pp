@@ -1,17 +1,15 @@
+hiera_include('classes')
 node default {
 
-    file {'/var/lib/puppet':
+    $dirs = [ "/var/lib/puppet", "/etc/puppet", "/etc/facter",
+              "/etc/facter/facts.d" ]
+  
+    file { $dirs:
         ensure => directory,
     }
-
-    file {'/etc/puppet':
-        ensure => directory,
-    }
-
+    
     # Turn off filebucket
     File {
         backup => false,
     }
-
-    hiera_include('classes')
 }
