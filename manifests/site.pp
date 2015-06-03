@@ -1,8 +1,7 @@
 hiera_include('classes')
 node default {
 
-    $dirs = [ "/var/lib/puppet", "/etc/puppet", "/etc/facter",
-              "/etc/facter/facts.d" ]
+    $dirs = [ "/var/lib/puppet", "/etc/puppet", "/etc/facter" ]
   
     file { $dirs:
         ensure => directory,
