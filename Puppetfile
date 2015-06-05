@@ -7,6 +7,9 @@ mod 'mac_admin',
 mod 'mac_profiles_handler',
     :git => 'https://github.com/ryanycoleman/rcoleman-mac_profiles_handler'
 
+mod 'homebrew',
+    :git => 'https://github.com/TheKevJames/puppet-homebrew'
+
 mod 'mac_facts',
     :git => 'https://github.com/grahamgilbert/grahamgilbert-mac_facts.git'
 
