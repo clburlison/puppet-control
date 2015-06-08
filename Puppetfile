@@ -7,9 +7,6 @@ mod 'mac_admin',
 mod 'mac_profiles_handler',
     :git => 'https://github.com/ryanycoleman/rcoleman-mac_profiles_handler'
 
-mod 'brewcask',
-    :git => 'https://github.com/boxen/puppet-brewcask'
-
 mod 'mac_facts',
     :git => 'https://github.com/grahamgilbert/grahamgilbert-mac_facts.git'
 
