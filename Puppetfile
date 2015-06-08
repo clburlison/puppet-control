@@ -19,6 +19,9 @@ mod 'stdlib',
 mod 'osx',
     :git => 'https://github.com/boxen/puppet-osx'
 
+mod 'vagrant',
+    :git => 'https://github.com/boxen/puppet-vagrant'    
+
 # mod 'boxen',
 #     :git => 'https://github.com/boxen/puppet-boxen',
 #     :ref => '3.11.0'
