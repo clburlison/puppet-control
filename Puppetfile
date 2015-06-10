@@ -10,6 +10,9 @@ mod 'mac_profiles_handler',
 mod 'mac_facts',
     :git => 'https://github.com/grahamgilbert/grahamgilbert-mac_facts.git'
 
+mod 'bisd_facts',
+    :git => 'git://github.com/birdvilleisd/bisd-facts.git'
+
 mod 'repository',
     :git => 'https://github.com/boxen/puppet-repository'
 
