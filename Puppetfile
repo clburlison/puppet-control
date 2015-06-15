@@ -13,9 +13,6 @@ mod 'mac_facts',
 mod 'bisd_facts',
     :git => 'git://github.com/birdvilleisd/bisd-facts.git'
 
-mod 'bisd_profile',
-    :git => 'git://github.com/birdvilleisd/puppet-profile.git'
-
 mod 'repository',
     :git => 'https://github.com/boxen/puppet-repository'
 
