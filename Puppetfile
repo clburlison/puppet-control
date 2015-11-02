@@ -1,5 +1,5 @@
-mod 'clburlison-profile',
-    :git => 'https://github.com/clburlison/puppet-clburlison-profile'
+mod 'clburlisonconfig',
+    :git => 'https://github.com/clburlison/puppet-clburlisonconfig'
 
 mod 'mac_admin',
     :git => 'https://github.com/grahamgilbert/puppet-mac_admin'
