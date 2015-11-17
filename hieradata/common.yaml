@@ -1,0 +1,3 @@
+---
+classes:
+  - clburlisonconfig::puppet::pluginsync

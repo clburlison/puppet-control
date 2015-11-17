@@ -1,0 +1,21 @@
+---
+# hiera data inside of this file will only apply to OS X machines
+
+# below are variables needed by the classes above.
+ 
+managedmac::organization: ""
+managedmac::loginwindow::loginwindow_text: 
+   "Property of Clayton Burlison. If found please contact via clburlison@gmail.com or 682-225-7222."
+managedmac::sshd::enable: true
+managedmac::sshd::users:
+   - clburlison
+managedmac::remotemanagement::enable: true
+managedmac::remotemanagement::users:
+  clburlison: -1073741569
+managedmac::security::ask_for_password: true
+managedmac::security::ask_for_password_delay: 60
+
+
+managedmac::mobileconfigs::defaults:
+  description:  'Installed by Puppet.'
+  organization: ''

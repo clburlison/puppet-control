@@ -1,0 +1,21 @@
+---
+# hiera data inside of this file will only apply to OS X machines
+
+# below are variables needed by the classes above.
+ 
+managedmac::organization: "Birdville ISD"
+managedmac::loginwindow::loginwindow_text: 
+   "Property of Birdville ISD, please contact Clayton Burlison if found. clayton.burlison@birdvilleschools.net or 817-547-3819."
+managedmac::sshd::enable: true
+managedmac::sshd::users:
+   - clburlison
+managedmac::remotemanagement::enable: true
+managedmac::remotemanagement::users:
+  clburlison: -1073741569
+managedmac::security::ask_for_password: true
+managedmac::security::ask_for_password_delay: 60
+# managedmac::softwareupdate::catalog_url: https://swscan.apple.com/content/catalogs/others/index-10.11-10.10-10.9-mountainlion-lion-snowleopard-leopard.merged-1.sucatalog
+
+managedmac::mobileconfigs::defaults:
+  description:  'Installed by Puppet.'
+  organization: 'Birdville ISD'

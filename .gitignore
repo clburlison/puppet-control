@@ -1,4 +1,4 @@
-modules/
+hieradata/keys/*
 *.pkg
 *.dmg
 *.DS_Store

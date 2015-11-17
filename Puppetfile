@@ -1,6 +1,3 @@
-mod 'clburlisonconfig',
-    :git => 'https://github.com/clburlison/puppet-clburlisonconfig'
-
 mod 'mac_admin',
     :git => 'https://github.com/grahamgilbert/puppet-mac_admin'
 
@@ -16,9 +13,6 @@ mod 'wan_ip',
 mod 'bisd_facts',
     :git => 'git://github.com/birdvilleisd/bisd-facts.git'
 
-mod 'erikng_facts',
-    :git => 'git://github.com/erikng/facts.git'
-
 mod 'repository',
     :git => 'https://github.com/boxen/puppet-repository'
 
@@ -30,10 +24,6 @@ mod 'osx',
 
 mod 'vagrant',
     :git => 'https://github.com/boxen/puppet-vagrant'    
-
-# mod 'boxen',
-#     :git => 'https://github.com/boxen/puppet-boxen',
-#     :ref => '3.11.0'
 
 mod 'git',
     :git => 'https://github.com/boxen/puppet-git'
