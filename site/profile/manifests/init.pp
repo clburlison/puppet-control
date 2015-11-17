@@ -21,7 +21,7 @@ class profile (
     include profile::git
     include profile::hosts
     include profile::profiles
-    include profile::repositories
+    # include profile::repositories
     include profile::ssh_keys
     include profile::users
     include profile::vagrant
