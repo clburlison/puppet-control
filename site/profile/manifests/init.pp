@@ -8,6 +8,7 @@ class profile (
     include outset
     include desktoppicture
     include profile::puppet::clean_reports
+    include profile::puppet::cleanup_old_puppet
     include profile::puppet::factsync
     include profile::puppet::pluginsync
 
@@ -17,12 +18,12 @@ class profile (
     include profile::directories
     include profile::dock
     include profile::fonts
-    include profile::gems
+    # include profile::gems
     include profile::git
     include profile::hosts
     include profile::profiles
     # include profile::repositories
     include profile::ssh_keys
     include profile::users
-    include profile::vagrant
+    # include profile::vagrant
 }

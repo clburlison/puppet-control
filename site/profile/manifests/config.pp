@@ -16,5 +16,5 @@ class profile::config (
     class { 'profile::config::autopkg': }
     class { 'profile::config::system': }
     class { 'profile::config::textmate': }
-    class { 'profile::config::zsh': }
+    # class { 'profile::config::zsh': }
 }
