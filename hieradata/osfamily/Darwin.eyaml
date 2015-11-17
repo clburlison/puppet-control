@@ -2,7 +2,7 @@
 # hiera data inside of this file will only apply to OS X machines
 
 classes:
-  - clburlisonconfig
+  - profile
 
 # below are variables needed by the classes above.
 
