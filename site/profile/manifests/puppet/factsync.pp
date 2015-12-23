@@ -12,7 +12,7 @@ class profile::puppet::factsync (
   #   force   => true,
   # }
   
-  file {"$factpath2":
+  file {"$factpath3":
     source  => "/private/etc/puppetlabs/code/environments/production/site/profile/facts.d",
     recurse => true,
     purge   => true,

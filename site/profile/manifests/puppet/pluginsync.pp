@@ -4,7 +4,7 @@
 class profile::puppet::pluginsync (
   $libdir = "/var/lib/puppet/lib",
 ) {
-  file {"$libdir":
+  file {"${::puppet_vardir}":
     source  => "puppet:///plugins",
     recurse => true,
     purge   => true,

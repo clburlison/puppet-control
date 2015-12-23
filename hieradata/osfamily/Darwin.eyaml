@@ -29,25 +29,9 @@ clburlisonuser::iterations: '38910'
 clburlisonuser::password: ENC[PKCS7,MIICfQYJKoZIhvcNAQcDoIICbjCCAmoCAQAxggEhMIIBHQIBADAFMAACAQEwDQYJKoZIhvcNAQEBBQAEggEAIpADRoPNkeM0UWDg+zlYyvtkY8JZ0hAxunpTPm2NafYUtx2mnwPj1Ggg1fkKLyJ4/tIpM/QnOap3I6dBvL5tgDWd8nnK3kyuNw4cLQsBQBnBGPoQelY6Md34phjh4TjEyCH6ZnWLCp9lsFHRVO0kScTOy4xOkMcSctYpQ+lNZlt2uBjKlUVdZRbDBfhkAI/FHCLyHPoH8thi5fJEcdYNAT/rgooqR2/pXjiqKrUGb2sXTLAgTCvGjYspVx5GBNcJ1eHpUd4fT3yWzqmEKwPUZ+OGcdm+GOxH+KaoCqd/5XBcVwv+56cNyWuw6agnQWdQiGlsSP/2Hwq/ygdWm9ov1zCCAT4GCSqGSIb3DQEHATAdBglghkgBZQMEASoEEMuvOi2bPlqTCvBk31pnWPyAggEQbg6Fi9iP5+lBC4tlUOixMC9HdV8AsjtvDkXfXz1pEwl0pzLcYNuBJaSPTdb/L0NdOOWvJjN9YtesM/IqhFYCgNJaf/xum+x3sLitsYkTHUn5ZLQY/PpOJR9b2aXaeQIWHUq9g5bSnSlxIfMGye3rzay9KEv29gqB2TDqA9xPHQfT6kL8FmViDV7sKdYQq/JMI3EUzIDLEXQa7kR0wk+a+p3MoDCMDBGIHTB5I8kfFWgHCKZbNOobZgRRKoPht7ejb9YDlZgkMiK2sjlsHxnEddC8yj5ptI8uhI7KyMFXJUPNgaK+F+76wMHUKY8cEdSUMtgEhykIvDVJS51icrLRg/eJl7sBVhVnmONN+xB2rV8=]
 clburlisonuser::salt: ENC[PKCS7,MIIBuQYJKoZIhvcNAQcDoIIBqjCCAaYCAQAxggEhMIIBHQIBADAFMAACAQEwDQYJKoZIhvcNAQEBBQAEggEADwLtfD13YbD5tqOyYXNTzsmQ5KahWFQT2e6FLYELX0ODgFtr8R7FP89kUtHpkojMuu3oEFvghIwHwM8HPSJlp21CDn8UaOQvEgVfLKkWoDBBvnz57umsXUdbPPYYbOHn6eThm8e7fkuIAGyqV3fIvd2TtXiEXrE7KjWWaJMHY+2FgH3WJdZ7F2w/Vpju7l9T2y6ybLaoXN1Hz1HvQ50kaVKWZho5+cejlcbb9ais42/l9LovLS3GpAaPv66q/9ZEFn/93NCM3m3CvLr/Ql3jKEpu4mUxtIJVRv8VYlBgGwTimrsXK+I5w2Th0zgiXun/8mrSEzd+0WLP7Yn96tZ+SzB8BgkqhkiG9w0BBwEwHQYJYIZIAWUDBAEqBBBdCKsu+RcAN+vhYMgYBSGcgFBxiXkYlC/OUD3Snob5OsdMTAOSa0+F4qMQjemXxNbSgiCgvIeSayKzFZAKvWxSARB40C7qR67x1K4Zp0EDGBt5bq/4n4Gkd7ZXODVTQmD5ag==]
 
-# Create local admin user
-# managedmac::users::accounts:
-#   clburlison:
-#     uid: 530
-#     gid: 80
-#     home: '/Users/clburlison'
-#     comment: 'Clayon Burlison'
-#     shell: '/bin/zsh'
-#     salt: ENC[PKCS7,MIIBuQYJKoZIhvcNAQcDoIIBqjCCAaYCAQAxggEhMIIBHQIBADAFMAACAQEwDQYJKoZIhvcNAQEBBQAEggEAuxbqoOT/Eb0DBxnlSK9K6fuohcGpSu72jUmTt9xS84h4EpjXFuH/RfoA27S5Kw3Mn+8Uel2KUsg1eQo5iwBC8xgo1wvtPXncjSd8TwTpFMiXkohWnDs7b1GNW78eciB3sGhalvLR7oq8snwqk7OC+1ufN+V0wBYDksk8t19vFGMrcooS9AWcsliJsguPHdy1r1zZIUc1oms7hACTsLQLKddXVP+PKFVOXMTcJ9ZexD4SwU9On6P1N1ONgHqWMLavpBPG6IeGuZSTiPbPGdGa/prTzI8ongx51Ve6MM2vJ0sRi5B+Yj8dhc9ZSi9AMQEYX4WJ714GGN5aN3RWSPn+QDB8BgkqhkiG9w0BBwEwHQYJYIZIAWUDBAEqBBBFTBRBVuj2/tw41MrjnATYgFA+fDeWh5/QGmtu8mhszF5Z7q3v79iUhDAgGpTSWoRWtWxTUzIKjjJf7qIE9v8Aw4s6uc36/oxsCy5HwypwbN8onxTdwxF1RpA6crCUPhw0Cg==]
-#     iterations: 36363
-#     password: ENC[PKCS7,MIICfQYJKoZIhvcNAQcDoIICbjCCAmoCAQAxggEhMIIBHQIBADAFMAACAQEwDQYJKoZIhvcNAQEBBQAEggEArW94S4uyA9IlwDOzrvBzUkROwjPhCz5+RuB1O055R+9AwLH5Qc4oa7noIlP8mGosrq27/F5Vam0nk7whMvvDjozRVpnyfo8PE1miUf62Kf87/dv2/dmgymPNaXxaZvYH6gT5FLgUSg16ItODt/Ddn5UNCQ45OtEt9rtl/4eBeWfXmecdytsIrkEibrwkTQql10cItuoU9IDBflS1JGJTPeg2v0kMThcqtQoQtAp3G37iw7HAqlzeQydwY3gEuPijPOf+lC6f4V1Xb80aTdmC0FJTeM/JjALEGfIDSmwZ+kGB/HK3QYChrNJ1WJL5kNl97zAUm/ULVqjltfj06i/mMDCCAT4GCSqGSIb3DQEHATAdBglghkgBZQMEASoEEDh9vNPLY03NtXc8IqNYXjyAggEQXdlkfBV5Nz5OD4i2PlYhdjwp9ZyXkNG3cqxbSyM0tLg/nNdkLpWXfZN2pS7N2S0DTyK2pdawkyP61v1erAE1qmVA56Q0SP4OZ2WfRtjLVojahk3Hxw7mmoBGTe8UoiQPPiQtPNdrRVqvSG5XLqIJX2E8FnpxxQh0GmE2PowHn38OdsaEmDZdBu8QM0dxPCpR9G2AQnO36uf/iZ6CcYbY9vHDqtAPeCqZ9baGb9CmZgulw1MJqDU0OZNm5hQ/X+qGWHi0zDmQXYqM9ToTdtrcOwPBtAnG8bqcRk3nYnYar1jVF7WWHOZSJ0fIDLKZmNpA89acrQvm5NdKTo5vuFO1CG8zOgvxNLrnzTM+bzi/WPY=]
-
-
 
 # below is one way to create Profiles which are installed when puppet runs. 
 
-managedmac::mobileconfigs::defaults:
-  description:  'Installed by Puppet.'
-  organization: 'Birdville ISD'
 managedmac::groups::defaults:
   ensure: present
 managedmac::groups::accounts:
@@ -57,9 +41,6 @@ managedmac::groups::accounts:
       - everyone
 
 #profiles
-managedmac::mobileconfigs::defaults:
-  description:  'Installed by Puppet.'
-  organization: 'Birdville ISD'
 managedmac::mobileconfigs::payloads:
   'DisableReopenWindows':
     displayname: 'Disable Reopen Windows'
@@ -95,26 +76,3 @@ managedmac::mobileconfigs::payloads:
           - mcx_preference_settings:
               NSDocumentSaveNewDocumentsToCloud: false
       PayloadType: com.apple.ManagedClient.preferences
-  com.clburlison.profile.chrome:
-    organization: Birdville ISD
-    displayname: Chrome
-    content:
-    - PayloadType: com.apple.ManagedClient.preferences
-      PayloadContent:
-        com.google.Chrome:
-          Set-Once:
-          - mcx_preference_settings:
-              DefaultBrowserSettingEnabled: true
-              BookmarkBarEnabled: true
-              HideWebStorePromo: true
-              HideWebStoreIcon: true
-              HomepageIsNewTabPage: false
-              HomepageLocation: http://birdvilleschools.net
-              SyncDisabled: false
-              ShowHomeButton: true
-              ImportAutofillFormData: false
-              ShowAppsShortcutInBookmarkBar: false
-              RestoreOnStartup: 4
-              RestoreOnStartupURLs:
-              - http://birdvilleschools.net
-              - chrome://newtab
