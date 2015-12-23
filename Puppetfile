@@ -43,9 +43,6 @@ mod 'outset',
 
 mod 'desktoppicture',
     :git => 'https://github.com/clburlison/puppet-desktoppicture'
-
-mod 'mobileconfig_profile',
-    :git => 'https://github.com/edestecd/puppet-mobileconfig_profile'
     
 mod "managedmac",
     :git => 'https://github.com/dayglojesus/managedmac',

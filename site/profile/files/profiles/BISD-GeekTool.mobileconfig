@@ -559,7 +559,7 @@ Git revision: 1d30395cd4</string>
 	<key>PayloadIdentifier</key>
 	<string>BISD-GeekTool</string>
 	<key>PayloadOrganization</key>
-	<string></string>
+	<string>Birdville ISD</string>
 	<key>PayloadRemovalDisallowed</key>
 	<false/>
 	<key>PayloadScope</key>
