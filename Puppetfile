@@ -8,7 +8,7 @@ mod 'mac_facts',
     :git => 'https://github.com/grahamgilbert/grahamgilbert-mac_facts.git'
 
 mod 'wan_ip',
-  :git => 'git://github.com/grahamgilbert/puppet-wan_ip.git'    
+    :git => 'git://github.com/grahamgilbert/puppet-wan_ip.git'    
 
 mod 'bisd_facts',
     :git => 'git://github.com/birdvilleisd/bisd-facts.git'
@@ -49,4 +49,4 @@ mod 'mobileconfig_profile',
     
 mod "managedmac",
     :git => 'https://github.com/dayglojesus/managedmac',
-    :ref => 'v0.6.0'
+    :ref => 'v0.7.3'
