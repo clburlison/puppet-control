@@ -14,7 +14,7 @@ class profile (
     # include profile::puppet::cleanup_old_puppet
     # include profile::puppet::factsync
     # include profile::puppet::pluginsync
-    #
+
     # include profile::apps
     # include profile::computername
     # include profile::config
@@ -27,6 +27,6 @@ class profile (
     # include profile::profiles
     # # include profile::repositories
     # include profile::ssh_keys
-    include profile::users
+    # include profile::users
     # # include profile::vagrant
 }
