@@ -2,7 +2,7 @@
 # when using 'puppet apply'.
 # Will recursively sync the fact.d folder to the right directory.
 class profile::puppet::factsync {
-  
+
   if $facterversion >= '3.0.0' {
     file {"/opt/puppetlabs/facter/facts.d/":
       source  => "/private/etc/puppetlabs/code/environments/production/site/profile/facts.d",
