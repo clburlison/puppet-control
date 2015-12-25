@@ -7,7 +7,7 @@ classes:
 # below are variables needed by the classes above.
 
 desktoppicture::wallpaper: 
-  '/Library/Desktop Pictures/Solid Colors/Solid Gray Pro Ultra Dark.png'
+  '/Library/Desktop\ Pictures/Solid\ Colors/Solid\ Gray\ Pro\ Ultra\ Dark.png'
 desktoppicture::freq: 'every'
  
 managedmac::loginwindow::hide_admin_users: true
