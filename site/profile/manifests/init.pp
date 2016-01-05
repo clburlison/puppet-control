@@ -9,7 +9,7 @@ class profile (
     # include desktoppicture
     # include profile::puppet::clean_reports
     # include profile::puppet::cleanup_old_puppet
-    # include profile::puppet::factsync
+    include profile::puppet::factsync
     # include profile::puppet::pluginsync
 
     # include profile::apps
