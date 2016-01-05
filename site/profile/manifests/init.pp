@@ -1,12 +1,12 @@
 class profile (
-    # $my_username  = $::boxen_user,
-    # $my_homedir   = "/Users/${::boxen_user}",
-    # $my_sourcedir = "/Users/${::boxen_user}/src",
+    $my_username  = $::boxen_user,
+    $my_homedir   = "/Users/${::boxen_user}",
+    $my_sourcedir = "/Users/${::boxen_user}/src",
     ){
 
     # include managedmac
     include outset
-    # include desktoppicture
+    include desktoppicture
     # include profile::puppet::clean_reports
     # include profile::puppet::cleanup_old_puppet
     include profile::puppet::factsync
