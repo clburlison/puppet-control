@@ -1,5 +1,5 @@
 class profile (
-  $my_username  = ${::console_user},
+  $my_username  = "${::console_user}",
   $my_homedir   = "/Users/${::console_user}",
   $my_sourcedir = "/Users/${::console_user}/src",
   ) {
