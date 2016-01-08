@@ -15,4 +15,4 @@ def get_console_user():
         console_user = getpass.getuser()
     return console_user
 
-print "boxen_user="+get_console_user()
+print "console_user="+get_console_user()
