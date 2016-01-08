@@ -11,6 +11,7 @@ class profile (
   include profile::puppet::cleanup_old_puppet
   include profile::puppet::factsync
   # include profile::puppet::pluginsync
+  include profile::puppet::puppet4_hiera
   include profile::puppet::remove_puppet4_daemons
 
   # include profile::apps
