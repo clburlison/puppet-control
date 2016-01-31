@@ -14,8 +14,6 @@
 						<dict>
 							<key>mcx_preference_settings</key>
 							<dict>
-								<key>AppleSoftwareUpdatesOnly</key>
-								<false/>
 								<% if @additionalhttpheaders !="" -%>
 								<key>AdditionalHttpHeaders</key>
 								<array>
@@ -30,6 +28,8 @@
 								<% if @install_apple_updates == true -%><true/><% else -%><false/><% end -%>
 								<key>AppleSoftwareUpdatesOnly</key>
 								<% if @apple_software_updates_only == true -%><true/><% else -%><false/><% end -%>
+								<key>UnattendedAppleUpdates</key>
+								<% if @unattended_apple_updates == true -%><true/><% else -%><false/><% end -%>
 								<% if @packageurl !="" -%>
 								<key>PackageURL</key>
 								<string><%= @packageurl -%></string>

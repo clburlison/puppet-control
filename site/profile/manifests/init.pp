@@ -27,7 +27,9 @@ class profile (
   # include profile::gems
   include profile::git
   include profile::profiles::loginwindow
+  include profile::profiles::munki
   include profile::profiles::profiles
+  include profile::profiles::remove_profiles
   include profile::profiles::screensaver
   include profile::users
   # include profile::vagrant
