@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>HideAdminUsers</key>
+			<% if @hide_admin_users == true -%><true/><% else -%><false/><% end -%>
+			<key>HideLocalUsers</key>
+			<% if @hide_local_users == true -%><true/><% else -%><false/><% end -%>
+			<key>HideMobileAccounts</key>
+			<% if @hide_mobile_accounts == true -%><true/><% else -%><false/><% end -%>
+			<% if @admin_host_info !="" -%>
+			<key>AdminHostInfo</key>
+			<string><%= @admin_host_info -%></string>
+			<% end -%>
+			<key>DisableConsoleAccess</key>
+			<% if @disable_console_access == true -%><true/><% else -%><false/><% end -%>
+			<% if @retries_until_hint !="" -%>
+			<key>RetriesUntilHint</key>
+			<integer><%= @retries_until_hint -%></integer>
+			<% end -%>
+			<key>SHOWFULLNAME</key>
+			<% if @showfullname == true -%><true/><% else -%><false/><% end -%>
+			<key>UseComputerNameForComputerRecordName</key>
+			<% if @use_computer_name_for_computer_record_name == true -%><true/><% else -%><false/><% end -%>
+			<key>com.apple.login.mcx.DisableAutoLoginClient</key>
+			<% if @disable_auto_login_client == true -%><true/><% else -%><false/><% end -%>
+			<% if @loginwindow_text !="" -%>
+			<key>LoginwindowText</key>
+			<string><%= @loginwindow_text -%></string>
+			<% end -%>
+			<key>PayloadEnabled</key>
+			<true/>
+			<key>PayloadIdentifier</key>
+			<string><%= @profile_identifier -%>.loginwindow</string>
+			<key>PayloadDisplayName</key>
+			<string>Login Window</string>
+			<key>PayloadType</key>
+			<string>com.apple.loginwindow</string>
+			<key>PayloadUUID</key>
+			<string>f264dd82-5730-7149-024f-b475f5e8c090</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>MultipleSessionEnabled</key>
+			<% if @enable_fast_user_switching == true -%><true/><% else -%><false/><% end -%>
+			<% if @auto_log_out_delay !="" -%>
+			<key>com.apple.autologout.AutoLogOutDelay</key>
+			<integer><%= @auto_log_out_delay -%></integer>
+			<% end -%>
+			<key>PayloadDisplayName</key>
+			<string>Login Window: Global Preferences</string>
+			<key>PayloadEnabled</key>
+			<true/>
+			<key>PayloadIdentifier</key>
+			<string><%= @profile_identifier -%>.GlobalPreferences</string>
+			<key>PayloadType</key>
+			<string>.GlobalPreferences</string>
+			<key>PayloadUUID</key>
+			<string>76e3a150-6f2c-7260-06d5-502615a58686</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>PayloadDescription</key>
+	<string>Loginwindow configuration settings</string>
+	<key>PayloadDisplayName</key>
+	<string>Loginwindow</string>
+	<key>PayloadIdentifier</key>
+	<string><%= @profile_identifier -%></string>
+	<key>PayloadOrganization</key>
+	<string><%= @organization -%></string>
+	<key>PayloadRemovalDisallowed</key>
+	<true/>
+	<key>PayloadScope</key>
+	<string>System</string>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadUUID</key>
+	<string>0dc319a0-c331-0131-eeb5-000c294ab81b</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+</dict>
+</plist>

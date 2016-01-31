@@ -10,27 +10,21 @@ desktoppicture::wallpaper:
   '/Library/Desktop Pictures/Solid Colors/Solid Gray Pro Ultra Dark.png'
 desktoppicture::freq: 'every'
  
-managedmac::loginwindow::hide_admin_users: true
-managedmac::loginwindow::hide_local_users: true
 managedmac::ntp::enable: true
 managedmac::ntp::servers:
  - time1.google.com
  - time.apple.com
-managedmac::remotemanagement::enable_menu_extra: false
-managedmac::security::disable_autologin: true
-managedmac::authorization::allow_energysaver: true
-managedmac::authorization::allow_datetime: true
-managedmac::authorization::allow_timemachine: true
-managedmac::authorization::allow_printers: true
-managedmac::authorization::allow_dvd_initial: true
+macauthdb::authorization::allow_energysaver: true
+macauthdb::authorization::allow_datetime: true
+macauthdb::authorization::allow_timemachine: true
+macauthdb::authorization::allow_printers: true
+macauthdb::authorization::allow_dvd_initial: true
+macauthdb::params::install_gems: false
 
 
-clburlisonuser::iterations: '38910'
-clburlisonuser::password: ENC[PKCS7,MIICfQYJKoZIhvcNAQcDoIICbjCCAmoCAQAxggEhMIIBHQIBADAFMAACAQEwDQYJKoZIhvcNAQEBBQAEggEAIpADRoPNkeM0UWDg+zlYyvtkY8JZ0hAxunpTPm2NafYUtx2mnwPj1Ggg1fkKLyJ4/tIpM/QnOap3I6dBvL5tgDWd8nnK3kyuNw4cLQsBQBnBGPoQelY6Md34phjh4TjEyCH6ZnWLCp9lsFHRVO0kScTOy4xOkMcSctYpQ+lNZlt2uBjKlUVdZRbDBfhkAI/FHCLyHPoH8thi5fJEcdYNAT/rgooqR2/pXjiqKrUGb2sXTLAgTCvGjYspVx5GBNcJ1eHpUd4fT3yWzqmEKwPUZ+OGcdm+GOxH+KaoCqd/5XBcVwv+56cNyWuw6agnQWdQiGlsSP/2Hwq/ygdWm9ov1zCCAT4GCSqGSIb3DQEHATAdBglghkgBZQMEASoEEMuvOi2bPlqTCvBk31pnWPyAggEQbg6Fi9iP5+lBC4tlUOixMC9HdV8AsjtvDkXfXz1pEwl0pzLcYNuBJaSPTdb/L0NdOOWvJjN9YtesM/IqhFYCgNJaf/xum+x3sLitsYkTHUn5ZLQY/PpOJR9b2aXaeQIWHUq9g5bSnSlxIfMGye3rzay9KEv29gqB2TDqA9xPHQfT6kL8FmViDV7sKdYQq/JMI3EUzIDLEXQa7kR0wk+a+p3MoDCMDBGIHTB5I8kfFWgHCKZbNOobZgRRKoPht7ejb9YDlZgkMiK2sjlsHxnEddC8yj5ptI8uhI7KyMFXJUPNgaK+F+76wMHUKY8cEdSUMtgEhykIvDVJS51icrLRg/eJl7sBVhVnmONN+xB2rV8=]
-clburlisonuser::salt: ENC[PKCS7,MIIBuQYJKoZIhvcNAQcDoIIBqjCCAaYCAQAxggEhMIIBHQIBADAFMAACAQEwDQYJKoZIhvcNAQEBBQAEggEADwLtfD13YbD5tqOyYXNTzsmQ5KahWFQT2e6FLYELX0ODgFtr8R7FP89kUtHpkojMuu3oEFvghIwHwM8HPSJlp21CDn8UaOQvEgVfLKkWoDBBvnz57umsXUdbPPYYbOHn6eThm8e7fkuIAGyqV3fIvd2TtXiEXrE7KjWWaJMHY+2FgH3WJdZ7F2w/Vpju7l9T2y6ybLaoXN1Hz1HvQ50kaVKWZho5+cejlcbb9ais42/l9LovLS3GpAaPv66q/9ZEFn/93NCM3m3CvLr/Ql3jKEpu4mUxtIJVRv8VYlBgGwTimrsXK+I5w2Th0zgiXun/8mrSEzd+0WLP7Yn96tZ+SzB8BgkqhkiG9w0BBwEwHQYJYIZIAWUDBAEqBBBdCKsu+RcAN+vhYMgYBSGcgFBxiXkYlC/OUD3Snob5OsdMTAOSa0+F4qMQjemXxNbSgiCgvIeSayKzFZAKvWxSARB40C7qR67x1K4Zp0EDGBt5bq/4n4Gkd7ZXODVTQmD5ag==]
-
-
-# below is one way to create Profiles which are installed when puppet runs. 
+profile::users::clburlison::iterations: '38910'
+profile::users::clburlison::password: ENC[PKCS7,MIICfQYJKoZIhvcNAQcDoIICbjCCAmoCAQAxggEhMIIBHQIBADAFMAACAQEwDQYJKoZIhvcNAQEBBQAEggEAIpADRoPNkeM0UWDg+zlYyvtkY8JZ0hAxunpTPm2NafYUtx2mnwPj1Ggg1fkKLyJ4/tIpM/QnOap3I6dBvL5tgDWd8nnK3kyuNw4cLQsBQBnBGPoQelY6Md34phjh4TjEyCH6ZnWLCp9lsFHRVO0kScTOy4xOkMcSctYpQ+lNZlt2uBjKlUVdZRbDBfhkAI/FHCLyHPoH8thi5fJEcdYNAT/rgooqR2/pXjiqKrUGb2sXTLAgTCvGjYspVx5GBNcJ1eHpUd4fT3yWzqmEKwPUZ+OGcdm+GOxH+KaoCqd/5XBcVwv+56cNyWuw6agnQWdQiGlsSP/2Hwq/ygdWm9ov1zCCAT4GCSqGSIb3DQEHATAdBglghkgBZQMEASoEEMuvOi2bPlqTCvBk31pnWPyAggEQbg6Fi9iP5+lBC4tlUOixMC9HdV8AsjtvDkXfXz1pEwl0pzLcYNuBJaSPTdb/L0NdOOWvJjN9YtesM/IqhFYCgNJaf/xum+x3sLitsYkTHUn5ZLQY/PpOJR9b2aXaeQIWHUq9g5bSnSlxIfMGye3rzay9KEv29gqB2TDqA9xPHQfT6kL8FmViDV7sKdYQq/JMI3EUzIDLEXQa7kR0wk+a+p3MoDCMDBGIHTB5I8kfFWgHCKZbNOobZgRRKoPht7ejb9YDlZgkMiK2sjlsHxnEddC8yj5ptI8uhI7KyMFXJUPNgaK+F+76wMHUKY8cEdSUMtgEhykIvDVJS51icrLRg/eJl7sBVhVnmONN+xB2rV8=]
+profile::users::clburlison::salt: ENC[PKCS7,MIIBuQYJKoZIhvcNAQcDoIIBqjCCAaYCAQAxggEhMIIBHQIBADAFMAACAQEwDQYJKoZIhvcNAQEBBQAEggEADwLtfD13YbD5tqOyYXNTzsmQ5KahWFQT2e6FLYELX0ODgFtr8R7FP89kUtHpkojMuu3oEFvghIwHwM8HPSJlp21CDn8UaOQvEgVfLKkWoDBBvnz57umsXUdbPPYYbOHn6eThm8e7fkuIAGyqV3fIvd2TtXiEXrE7KjWWaJMHY+2FgH3WJdZ7F2w/Vpju7l9T2y6ybLaoXN1Hz1HvQ50kaVKWZho5+cejlcbb9ais42/l9LovLS3GpAaPv66q/9ZEFn/93NCM3m3CvLr/Ql3jKEpu4mUxtIJVRv8VYlBgGwTimrsXK+I5w2Th0zgiXun/8mrSEzd+0WLP7Yn96tZ+SzB8BgkqhkiG9w0BBwEwHQYJYIZIAWUDBAEqBBBdCKsu+RcAN+vhYMgYBSGcgFBxiXkYlC/OUD3Snob5OsdMTAOSa0+F4qMQjemXxNbSgiCgvIeSayKzFZAKvWxSARB40C7qR67x1K4Zp0EDGBt5bq/4n4Gkd7ZXODVTQmD5ag==] 
 
 managedmac::groups::defaults:
   ensure: present
@@ -39,40 +33,3 @@ managedmac::groups::accounts:
     gid: 98
     nestedgroups:
       - everyone
-
-#profiles
-managedmac::mobileconfigs::payloads:
-  'DisableReopenWindows':
-    displayname: 'Disable Reopen Windows'
-    description: Disables application windows reopening at login.
-    content:
-    - PayloadContent:
-        com.apple.loginwindow:
-          Set-Once:
-          - mcx_data_timestamp: 2015-02-18 22:47:37.000000000 -06:00
-            mcx_preference_settings:
-              TALLogoutSavesState: false
-      PayloadType: com.apple.ManagedClient.preferences
-  'com.apple.TimeMachine':
-    displayname: 'TimeMachine'
-    content:
-    - PayloadContent:
-        com.apple.TimeMachine:
-          Set-Once:
-          - mcx_data_timestamp: 2015-02-20 11:27:22.000000000 -06:00
-            mcx_preference_settings:
-              DoNotOfferNewDisksForBackup: true
-              LocalizedDiskImageVolumeName: Time Machine Backups
-              PreferencesVersion: 2
-      PayloadType: com.apple.ManagedClient.preferences
-  'DontSaveToiCloud':
-    displayname: 'iCloud Settings'
-    description: Don't save files to iCloud by default.
-    content:
-    - PayloadContent:
-        .GlobalPreferences:
-          Set-Once:
-          - mcx_data_timestamp: 2015-02-20 11:27:22.000000000 -06:00
-          - mcx_preference_settings:
-              NSDocumentSaveNewDocumentsToCloud: false
-      PayloadType: com.apple.ManagedClient.preferences

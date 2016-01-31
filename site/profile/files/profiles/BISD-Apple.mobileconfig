@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadIdentifier</key>
+	<string>k12.bisd.wireless.BISD-Apple</string>
+	<key>PayloadRemovalDisallowed</key>
+	<true/>
+	<key>PayloadScope</key>
+	<string>System</string>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadUUID</key>
+	<string>48a39070-1e4c-0131-c321-000c2944c108</string>
+	<key>PayloadOrganization</key>
+	<string>Birdville ISD</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+	<key>PayloadDisplayName</key>
+	<string>BISD-Apple</string>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>PayloadType</key>
+			<string>com.apple.wifi.managed</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>PayloadIdentifier</key>
+			<string>k12.bisd.wireless.BISD-Apple</string>
+			<key>PayloadUUID</key>
+			<string>2872c4d0-1e56-0131-c329-000c2944c108</string>
+			<key>PayloadEnabled</key>
+			<true/>
+			<key>PayloadDisplayName</key>
+			<string>BISD-Apple Wireless</string>
+			<key>HIDDEN_NETWORK</key>
+			<false/>
+			<key>AutoJoin</key>
+			<true/>
+			<key>ProxyType</key>
+			<string>None</string>
+			<key>EncryptionType</key>
+			<string>None</string>
+			<key>SetupModes</key>
+			<array/>
+			<key>AuthenticationMethod</key>
+			<string></string>
+			<key>Interface</key>
+			<string>BuiltInWireless</string>
+			<key>SSID_STR</key>
+			<string>BISD-Apple</string>
+			<key>Password</key>
+			<string></string>
+		</dict>
+	</array>
+</dict>
+</plist>

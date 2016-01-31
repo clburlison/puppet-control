@@ -4,15 +4,12 @@ class profile::directories (
     $my_sourcedir = $profile::my_sourcedir
     $my_username  = $profile::my_username
 
+    require profile::puppet::factsync
+    
     File {
         owner   => "${my_username}",
         group   => 'admin',
     }
-
-  	file { "/Users/${my_username}/Dropbox/src":
-  	    ensure => "directory",
-  	    mode   => 750,
-  	}
 
     file {"${my_homedir}/src":
         ensure => link,
@@ -28,7 +25,7 @@ class profile::directories (
         ensure => link,
         target => "/Users/${my_username}/Dropbox/src/mine/blog",
     }
-    
+
     file {"${my_homedir}/.dotfiles":
         ensure => link,
         target => "/Users/${my_username}/Dropbox/src/mine/dotfiles",
@@ -43,7 +40,7 @@ class profile::directories (
         ensure => link,
         target => "/Users/${my_username}/Dropbox/src/others",
     }
-    
+
     file {"${my_homedir}/puppet":
         ensure => link,
         target => "/Users/${my_username}/Dropbox/src/puppet",
@@ -53,5 +50,4 @@ class profile::directories (
         ensure => link,
         target => "/Users/${my_username}/Dropbox/src/work",
     }
-
 }

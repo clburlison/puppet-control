@@ -548,14 +548,9 @@ echo "For Help Desk Support call: x3819"
 		</dict>
 	</array>
 	<key>PayloadDescription</key>
-	<string>Included custom settings:
-org.tynsoe.geeklet.shell
-org.tynsoe.GeekTool
-org.tynsoe.geektool3
-
-Git revision: 1d30395cd4</string>
+	<string>GeekTool application preferences</string>
 	<key>PayloadDisplayName</key>
-	<string>BISD-GeekTool</string>
+	<string>GeekTool Prefs</string>
 	<key>PayloadIdentifier</key>
 	<string>BISD-GeekTool</string>
 	<key>PayloadOrganization</key>

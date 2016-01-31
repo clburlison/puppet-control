@@ -1,6 +1,6 @@
 #!/usr/bin/env python
-"""Get current console user and print facter 
-fact to standard out"""
+"""Check the current console users Home directory for 
+Dropbox directory."""
 
 import os
 import subprocess
@@ -17,4 +17,13 @@ def get_console_user():
         console_user = getpass.getuser()
     return console_user
 
-print "console_user="+get_console_user()
+def dropbox_presence():
+    """Checks for the current console users Dropbox folder. 
+    If it is present return True else False"""
+    dir = "/Users/" + get_console_user() + "/Dropbox"
+    if not os.path.exists(dir):
+        return False
+    else:
+        return True
+
+print "dropbox_presence="+str(dropbox_presence())

@@ -1,11 +1,10 @@
-# A hack to get around the fact that pluginsync doesn't work properly
-# when using 'puppet apply'.
-# Will recursively sync the fact.d folder to the right directory.
+# A hack to get around the facts don't sync properly with pluginsync.
+# Will recursively sync the fact.d folder(s) to the right directory.
 class profile::puppet::factsync {
 
   if $::facterversion >= '3.0.0' {
     file {"/opt/puppetlabs/facter/facts.d/":
-      source  => "/private/etc/puppetlabs/code/environments/production/site/profile/facts.d",
+      source  => "puppet:///pluginfacts",
       recurse => true,
       purge   => true,
       force   => true,
@@ -16,7 +15,7 @@ class profile::puppet::factsync {
   }
   else {
     file {"/etc/facter/facts.d":
-      source  => "/private/etc/puppet/environments/production/modules/profile/facts.d",
+      source  => "puppet:///pluginfacts",
       recurse => true,
       purge   => true,
       force   => true,

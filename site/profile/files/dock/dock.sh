@@ -3,7 +3,7 @@
 /usr/local/bin/dockutil --remove all --no-restart
 /usr/local/bin/dockutil --add '/Applications/Google Chrome.app' --no-restart
 /usr/local/bin/dockutil --add '/Applications/2Do.app' --no-restart
-/usr/local/bin/dockutil --add '/Applications/1Password 5.app' --no-restart
+/usr/local/bin/dockutil --add '/Applications/1Password 6.app' --no-restart
 /usr/local/bin/dockutil --add '/Applications/Mail.app' --no-restart
 /usr/local/bin/dockutil --add '/Applications/Calendar.app' --no-restart
 /usr/local/bin/dockutil --add '/Applications/Spotify.app' --no-restart

@@ -4,6 +4,8 @@ class profile::fonts (
     $my_sourcedir = $profile::my_sourcedir
     $my_username  = $profile::my_username
 
+    require profile::puppet::factsync
+
     file {"${my_homedir}/Library/Fonts":
         ensure => 'directory',
         recurse => true,
