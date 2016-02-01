@@ -40,11 +40,11 @@ class profile::profiles::profiles {
     file_source => 'puppet:///modules/profile/profiles/k12.bisd.TimeMachine.mobileconfig',
   }
 
-  # 802.1x wireless config profile.
+  # BISD-Apple wireless config profile. This SSID should only be used for troubleshooting.
   if $mac_laptop == mac_laptop {
-    mac_profiles_handler::manage { 'k12.bisd.wireless.BISD-Secure':
+    mac_profiles_handler::manage { 'k12.bisd.wireless.BISD-Apple':
       ensure      => present,
-      file_source => 'puppet:///modules/profile/profiles/k12.bisd.wireless.BISD-Secure.mobileconfig',
+      file_source => 'puppet:///modules/profile/profiles/k12.bisd.wireless.BISD-Apple.mobileconfig',
     }
   }
 }
