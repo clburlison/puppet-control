@@ -2,26 +2,13 @@
 # Will recursively sync the fact.d folder(s) to the right directory.
 class profile::puppet::factsync {
 
-  if $::facterversion >= '3.0.0' {
-    file {"/opt/puppetlabs/facter/facts.d/":
-      source  => "puppet:///pluginfacts",
-      recurse => true,
-      purge   => true,
-      force   => true,
-      owner   => 0,
-      group   => 0,
-      mode    => '0755',
-    }
-  }
-  else {
-    file {"/etc/facter/facts.d":
-      source  => "puppet:///pluginfacts",
-      recurse => true,
-      purge   => true,
-      force   => true,
-      owner   => 0,
-      group   => 0,
-      mode    => '0755',
-    }
+  file {"${::settings::pluginfactdest}":
+    source  => "puppet:///pluginfacts",
+    recurse => true,
+    purge   => true,
+    force   => true,
+    owner   => 0,
+    group   => 0,
+    mode    => '0755',
   }
 }
