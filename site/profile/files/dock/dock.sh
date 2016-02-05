@@ -15,7 +15,6 @@
 /usr/local/bin/dockutil --add '/Applications/VMware Fusion.app' --no-restart
 /usr/local/bin/dockutil --add '/Applications/Tower.app' --no-restart
 /usr/local/bin/dockutil --add '/Applications/MunkiAdmin.app' --no-restart
-/usr/local/bin/dockutil --add '/Applications/Trello X.app' --no-restart
 /usr/local/bin/dockutil --add '/Applications/Managed Software Center.app' --no-restart
 /usr/local/bin/dockutil --add '/Applications/System Preferences.app' --no-restart
 
