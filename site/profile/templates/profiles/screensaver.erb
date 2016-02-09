@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1">
-  <dict>
-    <key>PayloadContent</key>
-    <array>
-	    <dict>
+	<dict>
+		<key>PayloadContent</key>
+		<array>
+			<dict>
+				<% if @ask_for_password !="" -%>
 				<key>askForPassword</key>
-	      <% if @ask_for_password == true -%><true/><% else -%><false/><% end -%>
+				<% if @ask_for_password == true -%><true/><% else -%><false/><% end -%>
+				<% end -%>
 				<% if @ask_for_password_delay !="" -%>
-	      <key>askForPasswordDelay</key>
-	      <integer><%= @ask_for_password_delay -%></integer>
+				<key>askForPasswordDelay</key>
+				<integer><%= @ask_for_password_delay -%></integer>
 				<% end -%>
 				<% if @idle_time !="" -%>
-	      <key>idleTime</key>
-	      <integer><%= @idle_time -%></integer>
+				<key>idleTime</key>
+				<integer><%= @idle_time -%></integer>
 				<% end -%>
 				<key>PayloadEnabled</key>
 				<true/>
@@ -29,23 +31,23 @@
 				<integer>1</integer>
 			</dict>
 		</array>
-    <key>PayloadUUID</key>
-    <string>35956225-3AA0-4735-BA3B-68224F26381D</string>
-    <key>PayloadType</key>
-    <string>Configuration</string>
-    <key>PayloadOrganization</key>
-    <string><%= @organization -%></string>
-    <key>PayloadIdentifier</key>
-    <string><%= @profile_identifier -%></string>
-    <key>PayloadDisplayName</key>
-    <string>Screensaver</string>
-    <key>PayloadDescription</key>
-    <string>Screensaver</string>
-    <key>PayloadVersion</key>
-    <integer>1</integer>
-    <key>PayloadEnabled</key>
-    <true/>
-    <key>PayloadRemovalDisallowed</key>
-    <true/>
-  </dict>
+		<key>PayloadUUID</key>
+		<string>35956225-3AA0-4735-BA3B-68224F26381D</string>
+		<key>PayloadType</key>
+		<string>Configuration</string>
+		<key>PayloadOrganization</key>
+		<string><%= @organization -%></string>
+		<key>PayloadIdentifier</key>
+		<string><%= @profile_identifier -%></string>
+		<key>PayloadDisplayName</key>
+		<string>Screensaver</string>
+		<key>PayloadDescription</key>
+		<string>Screensaver</string>
+		<key>PayloadVersion</key>
+		<integer>1</integer>
+		<key>PayloadEnabled</key>
+		<true/>
+		<key>PayloadRemovalDisallowed</key>
+		<true/>
+	</dict>
 </plist>
