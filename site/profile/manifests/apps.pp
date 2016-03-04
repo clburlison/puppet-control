@@ -6,5 +6,6 @@ class profile::apps (
 
     # include profile::apps::ipython
     # include profile::apps::livestreamer
+    include profile::apps::microsoft_mau_link
     include profile::apps::pip
 }
