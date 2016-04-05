@@ -1,7 +1,7 @@
 class profile::git (
 ){
     
-    # This doesn't work currently
+    # This doesn't work currently; another test
     $my_homedir   = $profile::my_homedir
     $my_sourcedir = $profile::my_sourcedir
     $my_username  = $profile::my_username
