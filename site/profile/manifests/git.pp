@@ -13,11 +13,18 @@ class profile::git (
     }
 
     git::config::global{ 'user.email':
-      value => 'clburlison@gmail.com',
+      value => 'gmail@clburlison.com',
     }
-  
+
+    git::config::global{ 'commit.gpgsign':
+      value => 'true',
+    }
+
+    git::config::global{ 'user.signingkey':
+      value => 'ED91CD4E',
+    }
+
     git::config::global{ 'push.default':
       value => 'simple',
-    }
-	
+    }	
 }
