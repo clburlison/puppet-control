@@ -18,7 +18,7 @@
 /usr/local/bin/dockutil --add '/Applications/Managed Software Center.app' --no-restart
 /usr/local/bin/dockutil --add '/Applications/System Preferences.app' --no-restart
 
-/usr/local/bin/dockutil --add '~/bin/mount_munki_repo.py' --no-restart
+/usr/local/bin/dockutil --add '~/bin/mount_munki_repo.command' --no-restart
 /usr/local/bin/dockutil --add '/Applications/' --view list --display folder --sort name --no-restart
 /usr/local/bin/dockutil --add '~/Documents' --view grid --display folder --sort name --no-restart
 /usr/local/bin/dockutil --add '~/Downloads' --view fan --display folder --sort dateadded
