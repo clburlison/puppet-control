@@ -10,6 +10,7 @@
 /usr/local/bin/dockutil --add '/Applications/Messages.app' --no-restart
 /usr/local/bin/dockutil --add '/Applications/Utilities/Terminal.app' --no-restart
 /usr/local/bin/dockutil --add '/Applications/TextMate.app' --no-restart
+/usr/local/bin/dockutil --add '/Applications/Atom.app' --no-restart
 /usr/local/bin/dockutil --add '/Applications/Slack.app' --no-restart
 /usr/local/bin/dockutil --add '/Applications/Remote Desktop.app' --no-restart
 /usr/local/bin/dockutil --add '/Applications/VMware Fusion.app' --no-restart
