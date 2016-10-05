@@ -7,7 +7,7 @@ class profile::profiles::screensaver (
   $idle_time = '180',
 ){
   mac_profiles_handler::manage { 'k12.bisd.screensaver':
-    ensure      => present,
+    ensure      => absent,
     file_source => template('profile/profiles/screensaver.erb'),
     type        => 'template'
   }
