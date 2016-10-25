@@ -4,9 +4,17 @@ class profile::dock (
     $my_sourcedir = $profile::my_sourcedir
     $my_username  = $profile::my_username
 
+    include profile::tools
+
+    outset::login_every{'dock.py':
+        script => 'puppet:///modules/profile/dock/dock.py',
+        ensure => present,
+        priority => 1
+    }
+
     outset::login_every{'Dock.sh':
         script => 'puppet:///modules/profile/dock/dock.sh',
-        ensure => present,
+        ensure => absent,
         priority => 1
     }
 
