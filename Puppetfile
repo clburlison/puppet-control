@@ -54,7 +54,7 @@ mod 'mac_facts',
 # keeleysam modules
 mod 'mac_profiles_handler',
   :git => 'git://github.com/keeleysam/puppet-mac_profiles_handler.git',
-  :ref = 'fe2f006cfd495e7adc5bb698d43352ce93f6baf0'
+  :ref = 'afc5a8b03528ef61e0fcdda705281502da3f4326'
 
 mod 'macdefaults',
   :git => 'git://github.com/keeleysam/puppet-macdefaults.git'
