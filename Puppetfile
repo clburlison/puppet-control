@@ -3,13 +3,14 @@
 ##################################################
 
 mod 'stdlib',
-  :git => 'git://github.com/puppetlabs/puppetlabs-stdlib.git'
+  :git => 'git://github.com/puppetlabs/puppetlabs-stdlib.git',
+  :ref => '4.12.0'
 
 mod 'inifile',
   :git => 'git://github.com/puppetlabs/puppetlabs-inifile.git'
 
 ##################################################
-# Personal Modules 
+# Personal Modules
 ##################################################
 
 mod 'outset',
@@ -22,7 +23,7 @@ mod 'desktoppicture',
   :git => 'git://github.com/clburlison/puppet-desktoppicture.git'
 
 ##################################################
-# Work Modules 
+# Work Modules
 ##################################################
 
 mod 'bisd_facts',
@@ -30,7 +31,7 @@ mod 'bisd_facts',
 
 
 ##################################################
-# External Modules 
+# External Modules
 ##################################################
 
 # dayglojesus modules
@@ -52,7 +53,8 @@ mod 'mac_facts',
 
 # keeleysam modules
 mod 'mac_profiles_handler',
-  :git => 'git://github.com/keeleysam/puppet-mac_profiles_handler.git'
+  :git => 'git://github.com/keeleysam/puppet-mac_profiles_handler.git',
+  :ref = 'bdb1e31aa751a0b7f8fc3723d3d56b9b7518547a'
 
 mod 'macdefaults',
   :git => 'git://github.com/keeleysam/puppet-macdefaults.git'
@@ -62,7 +64,7 @@ mod 'osx_utils',
 
 mod 'osx_ard',
   :git => 'git://github.com/keeleysam/puppet-osx_ard.git'
-  
+
 # boxen modules
 mod 'git',
   :git => 'git://github.com/boxen/puppet-git.git'
