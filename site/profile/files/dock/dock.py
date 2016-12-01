@@ -15,7 +15,7 @@ persistent_apps, persistent_others = [], []
 
 # my preferred apps
 APPS = ['/Applications/Safari.app',
-        '/Applications/Google Chrome',
+        '/Applications/Google Chrome.app',
         '/Applications/2Do.app',
         '/Applications/1Password 6.app',
         '/Applications/Mail.app',
