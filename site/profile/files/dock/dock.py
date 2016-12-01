@@ -14,8 +14,8 @@ persistent_apps, persistent_others = [], []
 # persistent_others = dock.items['persistent-others']
 
 # my preferred apps
-APPS = ['/Applications/Safari.app',
-        '/Applications/Google Chrome.app',
+APPS = ['/Applications/Google Chrome.app',
+        '/Applications/Safari.app',
         '/Applications/2Do.app',
         '/Applications/1Password 6.app',
         '/Applications/Mail.app',
