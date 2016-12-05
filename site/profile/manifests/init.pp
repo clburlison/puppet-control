@@ -38,7 +38,7 @@ class profile (
   if ($dropbox_presence == 'True') {
     include profile::directories
     include profile::fonts
-    include profile::hosts
+    # include profile::hosts
     # include profile::repositories
     include profile::ssh_keys
   }
