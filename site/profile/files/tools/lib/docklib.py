@@ -1,10 +1,15 @@
-'''Routines for manipulating the Dock'''
-# Orginal author: Greg Neagle
-# https://gist.github.com/gregneagle/5c422d709c93615341a21009f800222e
-#
-# Minor modications to support his environment by:
-# Clayton Burlison
-# Sept. 14, 2016
+'''Routines for manipulating the Dock
+Orginal author: Greg Neagle
+https://gist.github.com/gregneagle/5c422d709c93615341a21009f800222e
+
+Modications by: Clayton Burlison
+Last update: Feb. 09, 2017
+Added features:
+  * `finally` block on Dock.save() so the Dock doesn't go into a unsupported
+    state if the script fails
+  * Added `url` other type for http, smb, afp, etc. connections
+  * Added `label_type` to findExistingLabel() for searching URL connections
+'''
 
 import os
 import subprocess
@@ -65,11 +70,12 @@ class Dock():
                              'start',
                              self._DOCK_LAUNCHAGENT_ID])
 
-    def findExistingLabel(self, test_label, section='persistent-apps'):
+    def findExistingLabel(self, test_label, section='persistent-apps',
+                          label_type='file-label'):
         '''returns index of item with label matching test_label
             or -1 if not found'''
         for index in range(len(self.items[section])):
-            if (self.items[section][index]['tile-data'].get('file-label') ==
+            if (self.items[section][index]['tile-data'].get(label_type) ==
                     test_label):
                 return index
         return -1
@@ -153,6 +159,12 @@ class Dock():
                                   'showas': showas
                                   },
                     'tile-type': 'directory-tile'}
+        elif thePath.lower().startswith(('afp', 'smb', 'http', 'https')):
+            return {'tile-data': {'url': {'_CFURLString': thePath,
+                                          '_CFURLStringType': 15},
+                                  'label': label_name,
+                                  'dock-extra': False},
+                    'tile-type': 'url-tile'}
         else:
             return {'tile-data': {'file-data': {'_CFURLString': ns_url,
                                                 '_CFURLStringType': 15},
