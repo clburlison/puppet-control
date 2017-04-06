@@ -40,6 +40,6 @@ class profile (
     # include profile::fonts
     # include profile::hosts
     # include profile::repositories
-    include profile::ssh_keys
+    # include profile::ssh_keys
   }
 }

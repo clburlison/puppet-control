@@ -7,8 +7,8 @@ class profile::ssh_keys (
     file { "/Users/${my_username}/.ssh":
        ensure  => 'link',
        target  => "/Users/${my_username}/Dropbox/Config/User/ssh_keys/",
- 	     owner   => "${my_username}",
- 	     mode    => '600',
+       owner   => "${my_username}",
+       mode    => '600',
        recurse => true,
     }
 }
