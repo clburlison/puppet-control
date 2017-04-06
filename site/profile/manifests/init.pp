@@ -33,11 +33,11 @@ class profile (
   include profile::profiles::screensaver
   include profile::users
   # include profile::vagrant
-  
+
   # These configs require dropbox for data
   if ($dropbox_presence == 'True') {
     include profile::directories
-    include profile::fonts
+    # include profile::fonts
     # include profile::hosts
     # include profile::repositories
     include profile::ssh_keys
