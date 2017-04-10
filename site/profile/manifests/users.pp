@@ -13,7 +13,7 @@ class profile::users (
       iterations => hiera('profile::users::clburlison::iterations', ''),
       password   => hiera('profile::users::clburlison::password', ''),
       salt       => hiera('profile::users::clburlison::salt', ''),
-      shell      => '/bin/zsh',
+      shell      => '/usr/local/bin/fish',
       uid        => '530',
     }
 }
