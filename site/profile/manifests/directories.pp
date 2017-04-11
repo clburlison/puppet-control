@@ -16,11 +16,11 @@ class profile::directories (
         target => "/Users/${my_username}/Dropbox/src",
     }
 
-    file {"${my_homedir}/bin":
-        ensure => link,
-        target => "/Users/${my_username}/Dropbox/Config/User/bin",
-    }
-
+#     file {"${my_homedir}/bin":
+#         ensure => link,
+#         target => "/Users/${my_username}/Dropbox/Config/User/bin",
+#     }
+#
 #     file {"${my_homedir}/blog":
 #         ensure => link,
 #         target => "/Users/${my_username}/Dropbox/src/mine/blog",
